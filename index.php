@@ -46,5 +46,20 @@ include_once 'knn.php';
  				echo "<tr>";
  			} ?>
  	</table>
+	 
+	 <table>
+ 		<tr>
+ 			<th>Distance</th>
+ 			<th>Location</th>
+ 		</tr>
+ 		<?php for ($i=0; $i <count($distance) ; $i++) { 
+ 			echo "<tr>";
+ 			for ($j=0; $j <2 ; $j++) { 
+ 				echo "<td>".$distance[$i][$j]."</td>";
+ 			}
+ 			echo "</tr>";
+
+ 		} ?>
+ 	</table>
  </body>
  </html>
